@@ -1,3 +1,7 @@
 <h1>Listagem de Serviços</h1>
 
-<p>Fiquei com preguiça de terminar <%= Time.now %></p>
+<ul>
+  <% @servicos.each do |servico| %>
+    <li><%= servico.acao %> - <%= servico.uri %></li>
+  <% end %>
+</ul>
