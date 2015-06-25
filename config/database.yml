@@ -1,0 +1,20 @@
+default: &default
+  host: 107.170.3.24
+  port: 5432
+  username: vagrant
+  password: vagrant
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ws_factory_development
+
+test:
+  <<: *default
+  database: ws_factory_test
+
+production:
+  <<: *default
+  database: ws_factory_production
