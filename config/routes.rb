@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :useres, ActiveAdmin::Devise.config
+  devise_for :admin_useres, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root "servicos#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
