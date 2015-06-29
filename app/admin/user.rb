@@ -1,3 +1,4 @@
+=begin
 ActiveAdmin.register User do
   permit_params :email, :password, :password_confirmation
 
@@ -26,3 +27,4 @@ ActiveAdmin.register User do
   end
 
 end
+=end

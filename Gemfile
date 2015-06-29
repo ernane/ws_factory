@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby "2.2.2"
 
 gem 'rails', '4.2.2'
+gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.5'
